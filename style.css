@@ -1,0 +1,112 @@
+.body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    color: #f8fafc;
+    background-color: #020817;
+}
+
+.mojemeno {
+    margin-left: 100px;
+    font-weight: 700 !important;
+    color: #3B82F6;
+    font-size: 1.5rem;
+}
+
+.center {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.nadpis-div {
+    text-align: center;
+}
+
+.nadpis-home {
+    font-size: 4.5rem;
+    line-height: 1;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.nadpis-home span {
+    font-weight: 900 !important;
+    color: #3B82F6;
+}
+
+
+.nadpis-text {
+    font-size: 1.5rem;
+    line-height: 1;
+
+    color: #94A3B8;
+    display: block;
+}
+
+.ikonka-socials {
+    border: 14px solid #182233;
+    border-radius: 67px;
+    background-color: #182233;
+    stroke: white;
+    margin: 2px;
+}
+
+.ikonky-social {
+    padding-top: 2.5%;
+
+}
+.tlacidka-nadpis {
+    padding-top: 4%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.tlacidko,
+.tlacidko-transparent {
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0.6rem 1.6rem;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Primary button */
+.tlacidko {
+    background: linear-gradient(135deg, #3B82F6, #1E40AF);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.tlacidko:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+}
+
+/* Transparent / secondary button */
+.tlacidko-transparent {
+    background-color: rgba(0, 8, 23, 0.6);
+    border: 1px solid #1E293B;
+    color: #94A3B8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tlacidko-transparent:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #3B82F6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
