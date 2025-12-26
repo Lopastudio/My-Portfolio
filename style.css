@@ -2,6 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 
 .body {
     font-family: "Inter", sans-serif;
@@ -14,11 +22,12 @@ html {
 }
 
 .mojemeno {
-    margin-left: 100px;
-    font-weight: 700 !important;
+    font-weight: 700;
     color: #3B82F6;
     font-size: 1.5rem;
+    margin-left: 100px;
 }
+
 
 .center {
     display: flex;
@@ -29,8 +38,38 @@ html {
     padding-top: 5rem;
 }
 
+.navbar {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+}
 
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
 
+.nav-link {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-weight: 500;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #3B82F6;
+    opacity: 0.9;
+}
+
+.container-fluid {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .nadpis-div {
     text-align: center;
@@ -57,18 +96,39 @@ html {
     display: block;
 }
 
-.ikonka-socials {
-    border: 14px solid #182233;
-    border-radius: 67px;
-    background-color: #182233;
-    stroke: white;
-    margin: 2px;
-}
-
 .ikonky-social {
-    padding-top: 4%;
-
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
 }
+
+
+.ikonka-socials {
+    width: 52px;
+    height: 52px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(24, 34, 51, 0.8);
+    border: 1px solid #1E293B;
+    border-radius: 50%;
+
+    color: #f8fafc;
+    stroke: currentColor;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.ikonka-socials svg {
+    width: 22px;
+    height: 22px;
+}
+
 .tlacidka-nadpis {
     padding-top: 8%;
     display: flex;
@@ -162,6 +222,44 @@ section.about {
     background-color: #0A1122;
 }
 
+section.interests {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section.skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0A1122;
+}
+
+section.projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;/
+}
+
+section.contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0A1122;
+}
+
 .divider-nazovkapitoly {
     width: 100px;
     height: 4px;
@@ -177,4 +275,19 @@ section.about {
     font-size: 36px;
     margin: 0;
     font-weight: 700;
+}
+
+.footer {
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.footer-gify {
+    padding-top: 10px;
+}
+
+.gif-footer {
+    padding: 10px;
 }
